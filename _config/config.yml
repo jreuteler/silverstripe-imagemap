@@ -1,0 +1,7 @@
+---
+Name: imagemap
+After: 'framework/*','cms/*'
+---
+Image:
+  extensions:
+    - ImageMapImage
