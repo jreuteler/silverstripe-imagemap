@@ -18,7 +18,6 @@ class ImageMapField extends FieldGroup
 
         // extension
         Requirements::javascript(IMAGEMAP_DIR . '/vendor/canvas-area-draw/jquery.canvasAreaDraw.min.js');
-        // TODO: fix bug of not drawing image correctly after saving
 
         $coordinates = '';
         if ($this->owner && isset($this->owner->ImageMapCoordinates)) {
@@ -29,12 +28,11 @@ class ImageMapField extends FieldGroup
             TextareaField::create('ImageMapCoordinates')->addExtraClass('canvas-area')
                 ->addExtraClass('input-xxlarge')
                 ->setAttribute('data-image-url', $image->getURL())
-
                 ->setValue($coordinates)
         );
+
         $this->setName('ImageMap');
         $this->setTitle(_t('ImageMapField.IMAGEMAP', 'Image Map'));
-
 
         parent::__construct($fields);
     }
