@@ -1,0 +1,20 @@
+{
+  "name": "jreuteler/silverstripe-imagemap",
+  "description": "A Silverstripe DataExtension that allows to simply klick on the relevant parts of an image to create the according imageMap-coordinates.",
+  "type": "silverstripe-extension",
+  "homepage": "https://github.com/jreuteler/silverstripe-imagemap",
+  "keywords": ["silverstripe", "extension"],
+  "license": "",
+  "authors": [
+    {
+      "name": "Jan Reuteler",
+      "email": "janreuteler@icloud.com"
+    }
+  ],
+  "require": {
+    "silverstripe/framework": "~3.1",
+    "silverstripe/cms": "~3.1"
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
